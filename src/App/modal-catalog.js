@@ -33,4 +33,11 @@ export function closeModal(event, modalCatalog) {
   if (modalCatalog.classList.contains("menu__is-open")) {
     modalCatalog.classList.remove("menu__is-open");
   }
+  const isCatalogOpen = modalCatalog.classList.contains("menu__is-open");
+
+  if (isCatalogOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 }

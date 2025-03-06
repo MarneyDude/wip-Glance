@@ -1,4 +1,4 @@
-import { modalCatalog, closeModal } from "./modal-catalog.js";
+import { modalCatalog, closeModal, openCloseModal } from "./modal-catalog.js";
 
 export function setupNavigationListeners() {
   const navigationList = document.querySelector(".js-menu-list");

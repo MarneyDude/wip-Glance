@@ -4,6 +4,11 @@
   padding-right: 0.8rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .catalog {
+  }
+}
+
 .catalog__button {
   padding: 1.07rem;
   background-color: rgb(0, 161, 201);
@@ -44,6 +49,7 @@
   .catalog__list {
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 1rem;
   }
   .catalog__list .catalog-hidden {
     display: none;
@@ -91,7 +97,9 @@
   .catalog__link {
     background-color: whitesmoke;
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 1.5rem;
+    outline: 1px solid rgba(0, 161, 201, 0.219);
+    border-radius: 2.5rem;
   }
 }
 

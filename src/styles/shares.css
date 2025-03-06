@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .shares {
+    padding-top: 0;
+  }
+}
 .shares__title {
   font-size: 1.42rem;
   font-weight: 500;
