@@ -18,12 +18,12 @@ export function openNavigationLinks(event) {
   } else if (basketLink) {
     closeModal(event, modalCatalog);
     setTimeout(() => {
-      window.location.href = "/basket.html";
+      window.location.href = "/Glance/basket.html";
     }, 300);
   } else if (profileLink) {
     closeModal(event, modalCatalog);
     setTimeout(() => {
-      window.location.href = "/profile.html";
+      window.location.href = "/Glance/profile.html";
     }, 300);
   }
 }
