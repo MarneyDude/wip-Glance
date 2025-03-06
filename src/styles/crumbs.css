@@ -1,0 +1,28 @@
+.filter-nav {
+  padding: 1rem;
+}
+
+.filter-list {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 2.28rem;
+}
+
+.filter-link {
+  display: flex;
+  color: rgb(161, 161, 161);
+}
+
+.filter-link .actually-place {
+  color: rgb(41, 40, 40);
+}
+
+.go-back {
+  display: flex;
+  align-items: center;
+}
+
+.actually-catalog-box {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,113 @@
+.catalog {
+  padding-bottom: 0;
+  padding-left: 0.8rem;
+}
+
+.catalog-box-b {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.catalog-btn-icon {
+  stroke: white;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translateY(-50%);
+}
+.catalog-button {
+  padding: 1.07rem;
+  border-radius: 0.57rem;
+  border: transparent;
+  background-color: rgb(0, 161, 201);
+  color: white;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog-button {
+    display: none;
+  }
+}
+
+.catalog__list {
+  padding: 1.42rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0.71rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog__list {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .catalog__list .catalog-hidden {
+    display: none;
+  }
+}
+
+.catalog__list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.catalog__item {
+  display: flex;
+  width: 6rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  scroll-snap-align: start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog__item {
+    width: calc((100% - 2rem) / 3);
+    box-shadow: none;
+    background-color: whitesmoke;
+  }
+}
+.catalog__link {
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.71rem;
+  padding: 1.78rem 0.71rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .catalog__link {
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.catalog-arrow {
+  margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+  .catalog-arrow {
+    display: none;
+  }
+}
+.catalog__icon {
+  fill: rgb(0, 161, 201);
+  pointer-events: none;
+}
