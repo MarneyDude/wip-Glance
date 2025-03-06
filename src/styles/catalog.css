@@ -1,35 +1,31 @@
 .catalog {
   padding-bottom: 0;
   padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
-.catalog-box-b {
-  position: relative;
+.catalog__button {
+  padding: 1.07rem;
+  background-color: rgb(0, 161, 201);
   display: flex;
   justify-content: center;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  align-items: center;
+  width: 100%;
+  gap: 1.87rem;
+  border-radius: 0.57rem;
+  cursor: pointer;
+  color: white;
 }
 
 .catalog-btn-icon {
+  display: flex;
+  align-items: center;
   stroke: white;
   fill: white;
-  position: absolute;
-  top: 50%;
-  left: 26%;
-  transform: translateY(-50%);
-}
-.catalog-button {
-  padding: 1.07rem;
-  border-radius: 0.57rem;
-  border: transparent;
-  background-color: rgb(0, 161, 201);
-  color: white;
-  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  .catalog-button {
+  .catalog__button {
     display: none;
   }
 }
