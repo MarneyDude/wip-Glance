@@ -11,6 +11,12 @@
   z-index: 100;
 }
 
+@media only screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   justify-content: space-around;

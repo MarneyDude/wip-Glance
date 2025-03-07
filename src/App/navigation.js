@@ -15,6 +15,9 @@ export function openNavigationLinks(event) {
 
   if (homeLink) {
     closeModal(event, modalCatalog);
+    setTimeout(() => {
+      window.location.href = "/Glance/index.html";
+    }, 300);
   } else if (basketLink) {
     closeModal(event, modalCatalog);
     setTimeout(() => {

@@ -8,9 +8,11 @@ export function setupModalListeners() {
     openCloseModal(event, modalCatalog)
   );
 
-  modalCatalogButton.addEventListener("click", (event) =>
-    openCloseModal(event, modalCatalog)
-  );
+  if (modalCatalogButton) {
+    modalCatalogButton.addEventListener("click", (event) =>
+      openCloseModal(event, modalCatalog)
+    );
+  }
 }
 
 export function openCloseModal(event, modalCatalog) {

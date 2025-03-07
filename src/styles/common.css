@@ -1,8 +1,8 @@
-/* .container {
-  max-width: 26.78rem;
+.container {
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.14rem;
-} */
+}
 
 .container_V1 {
   display: flex;
