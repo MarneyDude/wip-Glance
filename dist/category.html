@@ -18,415 +18,390 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/Glance/assets/favicon-D1nnts35.svg" />
-    <link rel="stylesheet" crossorigin href="/Glance/assets/styles-G5wulxNO.css">
+    <script type="module" crossorigin src="/Glance/assets/main-zOR8vb52.js"></script>
+    <link rel="stylesheet" crossorigin href="/Glance/assets/styles-XQ8zrAAK.css">
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container">
-        <p class="header__logotype">glance</p>
-        <div class="header__input-box">
-          <label for="search-input" class="visually-hidden">Search</label>
-          <input class="header__search" type="text" placeholder="Search" />
-          <svg class="header__search-icon" width="20" height="20">
-            <use href="./images/sprite.svg#search"></use>
-          </svg>
-        </div>
+  <div class="header__top">
+    <a href="/index.html" class="header__logotype">
+      <span class="key">G</span>
+      <span class="key">L</span>
+      <span class="key">A</span>
+      <span class="key">N</span>
+      <span class="key">C</span>
+      <span class="key">E</span>
+    </a>
+    <div class="header__top-container">
+      <a class="header__shares-link" href="">shares</a>
+      <div class="help">
+        <svg class="header__phone-icon" width="22" height="22">
+          <use href="/Glance/assets/sprite-BzW_PW9T.svg#icon-phone"></use>
+        </svg>
+        <p class="help-text">Help</p>
+        <svg class="header__arrow-icon" width="15" height="15">
+          <use href="/Glance/assets/sprite-BzW_PW9T.svg#back"></use>
+        </svg>
       </div>
-    </header>
+      <div class="lang-swticher">
+        <ul class="lang-swticher-list">
+          <li class="lang-swticher-item">ENG</li>
+          <li class="lang-swticher-item">UKR</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__bottom-container">
+      <div class="header__bottom-catalog">
+        <svg class="header__bottom-icon-c" width="20" height="20">
+          <use href="/Glance/assets/sprite-BzW_PW9T.svg#catalog"></use>
+        </svg>
+        <p class="header__bottom-text">Product catalog</p>
+        <svg class="header__bottom-icon-arrow" width="20" height="20">
+          <use href="/Glance/assets/sprite-BzW_PW9T.svg#down_arrow"></use>
+        </svg>
+      </div>
+      <div class="header__input-box">
+        <label for="search-input" class="visually-hidden">Search</label>
+        <input class="header__search" type="text" placeholder="Search" />
+        <svg class="header__search-icon" width="20" height="20">
+          <use href="/Glance/assets/sprite-BzW_PW9T.svg#search"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+
     <main>
       <!-- CRUMBS -->
-      <section class="filter section">
-        <h1 class="visually-hidden">Filter</h1>
-        <nav class="filter-nav" aria-label="breadcrumb">
-          <ul
-            class="filter-list"
-            itemscope
-            itemtype="https://schema.org/BreadcrumbList"
-          >
-            <li
-              class="filter-item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <a href="./index.html" class="filter-link" itemprop="item">
-                <span itemprop="name">Home</span>
-              </a>
-              <meta itemprop="position" content="1" />
-            </li>
-            <li class="filter-item">/</li>
-            <li
-              class="filter-item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <a href="./catalog.html" class="filter-link" itemprop="item">
-                <span class="actually-place" itemprop="name">Catalog</span>
-              </a>
-              <meta itemprop="position" content="2" />
-            </li>
-          </ul>
-          <div class="actually-catalog-box">
-            <a class="go-back" href="./index.html">
-              <svg class="actually-catalog-svg" width="20" height="20">
-                <use href="./images/sprite.svg#back"></use>
-              </svg>
-            </a>
-            <h2 class="filter-title" id="js-filter-title"></h2>
-          </div>
-        </nav>
-      </section>
+      <section class="breadcrumbs section">
+  <h1 class="breadcrumbs__title visually-hidden">Breadcrumbs</h1>
+  <nav class="breadcrumbs__nav" aria-label="breadcrumb">
+    <ul
+      class="breadcrumbs__list"
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList"
+    >
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a href="./index.html" class="breadcrumbs__link" itemprop="item">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="breadcrumbs__separator">/</li>
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a class="breadcrumbs__link" itemprop="item">
+          <span class="breadcrumbs__current" itemprop="name">Catalog</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ul>
+    <div class="breadcrumbs__controls">
+      <a class="breadcrumbs__back" href="./index.html">
+        <svg class="breadcrumbs__icon" width="20" height="20">
+          <use href="./images/sprite.svg#back"></use>
+        </svg>
+      </a>
+      <h2 class="breadcrumbs__heading" id="js-breadcrumbs-title"></h2>
+    </div>
+  </nav>
+</section>
+
+
       <!-- CATEGORY PRODUCTS & FILTER -->
       <section class="products">
-        <!-- Filters -->
-        <ul class="filters">
-          <li class="filters__item filters__item--arrow">
-            <svg
-              class="filters__svg filters__svg--black"
-              width="20"
-              height="20"
-            >
-              <use href="./images/sprite.svg#arrows"></use>
-            </svg>
-          </li>
-          <li class="filters__item filters__item--filter">
-            <svg class="filters__svg" width="20" height="20">
-              <use href="./images/sprite.svg#filter"></use>
-            </svg>
-            Filters
-          </li>
-        </ul>
+  <!-- Filters -->
+  <ul class="filters">
+    <li class="filters__item filters__item--arrow">
+      <svg class="filters__svg filters__svg--black" width="20" height="20">
+        <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrows"></use>
+      </svg>
+    </li>
+    <li class="filters__item filters__item--filter">
+      <svg class="filters__svg" width="20" height="20">
+        <use href="/Glance/assets/sprite-BzW_PW9T.svg#filter"></use>
+      </svg>
+      Filters
+    </li>
+  </ul>
 
-        <!-- Products -->
-        <ul class="products-list" id="js-products-list"></ul>
-        <!-- <li class="products__ item">
-          <div class="products__header">
-            <img class="products__image" src="" alt="phone" />
-            <ul class="products__color-list">
-              <li class="products__color-item">
-                <a
-                  href="#"
-                  class="products__color-link"
-                  data-color="${color1} "
-                ></a>
-              </li>
-              <li class="products__color-item">
-                <a
-                  href="#"
-                  class="products__color-link"
-                  data-color="${color2}"
-                ></a>
-              </li>
-              <li class="products__color-item">
-                <a
-                  href="#"
-                  class="products__color-link"
-                  data-color="${color3}"
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <h3 class="products__name">${brand + " " + model}</h3>
-          <div class="products__action">
-            <div class="products__price">
-              <p class="products__price-value">${price} $</p>
-            </div>
-            <div class="products__button-box">
-              <button class="products__button" type="submit"></button>
-              <svg class="products__basket" width="20" height="20">
-                <use href="./images/sprite.svg#basket"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="products__info">
-            <p class="products__stock">In stock</p>
-            <div class="products__like-icon">
-              <svg class="products__like-svg" width="21" height="17px">
-                <use href="./images/sprite.svg#heart"></use>
-              </svg>
-            </div>
-          </div>
-        </li> -->
-      </section>
+  <!-- Products -->
+  <ul class="products-list" id="js-products-list"></ul>
+</section>
+
     </main>
 
     <!-- MODAL CATALOG -->
     <div class="modal__overlay js-modal-catalog">
-      <div class="modal">
-        <form class="modal__search-form">
-          <div class="modal__search-wrapper">
-            <label for="search-input" class="visually-hidden">Search</label>
-            <input
-              class="modal__search-input"
-              type="text"
-              id="search-input"
-              name="search-input"
-              placeholder="Search"
-            />
-            <button class="modal__search-button">
-              <svg class="modal__search-icon" width="20" height="20">
-                <use href="/Glance/assets/sprite-BHrGVTlA.svg#search"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-        <ul class="modal__catalog-list">
-          <li class="modal__catalog-item">
-            <a
-              href="./catalog.html"
-              class="modal__catalog-link modal__catalog-link--smartphone"
-              id="smartphone-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              Smartphones & Mobile Phones
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--watch"
-              id="watch-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#watch"></use>
-              </svg>
-              Smartwatches & Wearables
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--tv"
-              id="tv-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#tv"></use>
-              </svg>
-              TVs & Accessories
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--audio"
-              id="audio-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#audio"></use>
-              </svg>
-              Audio & Sound Systems
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--hair"
-              id="hair-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#hair"></use>
-              </svg>
-              Hair Dryers & Styling Tools
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--console"
-              id="console-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#console"></use>
-              </svg>
-              Gaming Consoles & Accessories
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--oven"
-              id="oven-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#oven"></use>
-              </svg>
-              Stoves & Cooktops
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--travel"
-              id="travel-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#travel"></use>
-              </svg>
-              Tourism & Travel
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--home-living"
-              id="home-living-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#home-living"></use>
-              </svg>
-              Home & Living
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--children"
-              id="children-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#children"></use>
-              </svg>
-              Children's Products
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--perfumes"
-              id="perfumes-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#perfumes"></use>
-              </svg>
-              Perfumes & Fragrances
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="modal__catalog-item">
-            <a
-              href=""
-              class="modal__catalog-link modal__catalog-link--sale"
-              id="sale-link"
-            >
-              <svg class="modal__catalog-icon" width="20" height="20">
-                <use href="./images/sprite.svg#sale"></use>
-              </svg>
-              Sales & Promotions
-              <svg class="modal__catalog-arrow" width="20" height="20">
-                <use href="./images/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+  <div class="modal">
+    <form class="modal__search-form">
+      <div class="modal__search-wrapper">
+        <label for="search-input" class="visually-hidden">Search</label>
+        <input
+          class="modal__search-input"
+          type="text"
+          id="search-input"
+          name="search-input"
+          placeholder="Search"
+        />
+        <button class="modal__search-button">
+          <svg class="modal__search-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#search"></use>
+          </svg>
+        </button>
       </div>
-    </div>
+    </form>
+    <ul class="modal__catalog-list js-modal__catalog-list">
+      <li class="modal__catalog-item">
+        <a
+          data-name="phones"
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--smartphone"
+          id="smartphone-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#smartphone"></use>
+          </svg>
+          Smartphones
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          data-name="smartWatches"
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--watch"
+          id="watch-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#watch"></use>
+          </svg>
+          Smartwatches
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          data-name="tV"
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--tv"
+          id="tv-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#tv"></use>
+          </svg>
+          TVs & Accessories
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          data-name="audio"
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--audio"
+          id="audio-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#audio"></use>
+          </svg>
+          Audio & Sound Systems
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--hair"
+          id="hair-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#hair"></use>
+          </svg>
+          Hair Dryers & Styling Tools
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--console"
+          id="console-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#console"></use>
+          </svg>
+          Gaming Consoles & Accessories
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--oven"
+          id="oven-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#oven"></use>
+          </svg>
+          Stoves & Cooktops
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--travel"
+          id="travel-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#travel"></use>
+          </svg>
+          Tourism & Travel
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--home-living"
+          id="home-living-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#home-living"></use>
+          </svg>
+          Home & Living
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--children"
+          id="children-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#children"></use>
+          </svg>
+          Children's Products
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--perfumes"
+          id="perfumes-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#perfumes"></use>
+          </svg>
+          Perfumes & Fragrances
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal__catalog-item">
+        <a
+          href="category.html"
+          class="modal__catalog-link modal__catalog-link--sale"
+          id="sale-link"
+        >
+          <svg class="modal__catalog-icon" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#sale"></use>
+          </svg>
+          Sales & Promotions
+          <svg class="modal__catalog-arrow" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <!-- MOBILE MENU -->
     <div class="menu">
-      <div class="container">
-        <nav class="menu__navigation">
-          <ul class="menu__list js-menu-list">
-            <li class="menu__item">
-              <a
-                href="./index.html"
-                class="menu__link menu__link--home"
-                id="home-link"
-              >
-                <svg class="menu__icon menu__icon--home" width="20" height="20">
-                  <use href="./images/sprite.svg#home"></use>
-                </svg>
-                Home
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#"
-                class="menu__link menu__link--catalog"
-                id="catalog-link"
-              >
-                <svg
-                  class="menu__icon menu__icon--catalog"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/sprite.svg#catalog"></use>
-                </svg>
-                Catalog
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#"
-                class="menu__link menu__link--basket"
-                id="basket-link"
-              >
-                <svg
-                  class="menu__icon menu__icon--basket"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/sprite.svg#basket"></use>
-                </svg>
-                Basket
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#"
-                class="menu__link menu__link--profile"
-                id="profile-link"
-              >
-                <svg
-                  class="menu__icon menu__icon--profile"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/sprite.svg#profile"></use>
-                </svg>
-                Profile
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  <nav class="menu__navigation">
+    <ul class="menu__list js-menu-list">
+      <li class="menu__item">
+        <a href="index.html" class="menu__link menu__link--home" id="home-link">
+          <svg class="menu__icon menu__icon--home" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#home"></use>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link menu__link--catalog" id="catalog-link">
+          <svg class="menu__icon menu__icon--catalog" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#catalog"></use>
+          </svg>
+          Catalog
+        </a>
+      </li>
+      <li class="menu__item">
+        <a
+          href="basket.html"
+          class="menu__link menu__link--basket"
+          id="basket-link"
+        >
+          <svg class="menu__icon menu__icon--basket" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#basket"></use>
+          </svg>
+          Basket
+        </a>
+      </li>
+      <li class="menu__item">
+        <a
+          href="profile.html"
+          class="menu__link menu__link--profile"
+          id="profile-link"
+        >
+          <svg class="menu__icon menu__icon--profile" width="20" height="20">
+            <use href="/Glance/assets/sprite-BzW_PW9T.svg#profile"></use>
+          </svg>
+          Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-    <!-- <script type="module" src="/src/App/catalog.js"></script> -->
+
   </body>
 </html>
